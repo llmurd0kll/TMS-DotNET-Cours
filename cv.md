@@ -7,15 +7,16 @@ So this is the first document which I do for TMS
 ### Useful links: 
 VK: https://vk.com/llmurd0kll; Git: https://github.com/llmurd0kll;
 
-### Some words about skills they are: 
--[x]CSS 
--[x]HTML
--[x]C++
--[x]JS
--[x]Unreal Engine 4
--[ ]C#
--[ ].Net Core
--[ ]Unity
+### Some words about skills they are:
+- CSS 
+- HTML
+- C++
+- JS
+- Unreal Engine 4
+- C#
+- .Net Core
+- Unity
+
 ### Education: 
 I studied 1.5 years at BSTU 
 ### English: 
