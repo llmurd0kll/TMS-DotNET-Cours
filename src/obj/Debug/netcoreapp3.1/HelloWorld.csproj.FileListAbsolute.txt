@@ -1,0 +1,11 @@
+D:\TMS-rep\TMS-DotNET-Cours\src\bin\Debug\netcoreapp3.1\HelloWorld.exe
+D:\TMS-rep\TMS-DotNET-Cours\src\bin\Debug\netcoreapp3.1\HelloWorld.deps.json
+D:\TMS-rep\TMS-DotNET-Cours\src\bin\Debug\netcoreapp3.1\HelloWorld.runtimeconfig.json
+D:\TMS-rep\TMS-DotNET-Cours\src\bin\Debug\netcoreapp3.1\HelloWorld.runtimeconfig.dev.json
+D:\TMS-rep\TMS-DotNET-Cours\src\bin\Debug\netcoreapp3.1\HelloWorld.dll
+D:\TMS-rep\TMS-DotNET-Cours\src\bin\Debug\netcoreapp3.1\HelloWorld.pdb
+D:\TMS-rep\TMS-DotNET-Cours\src\obj\Debug\netcoreapp3.1\HelloWorld.csprojAssemblyReference.cache
+D:\TMS-rep\TMS-DotNET-Cours\src\obj\Debug\netcoreapp3.1\HelloWorld.AssemblyInfoInputs.cache
+D:\TMS-rep\TMS-DotNET-Cours\src\obj\Debug\netcoreapp3.1\HelloWorld.AssemblyInfo.cs
+D:\TMS-rep\TMS-DotNET-Cours\src\obj\Debug\netcoreapp3.1\HelloWorld.dll
+D:\TMS-rep\TMS-DotNET-Cours\src\obj\Debug\netcoreapp3.1\HelloWorld.pdb
