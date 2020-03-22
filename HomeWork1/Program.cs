@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HomeWork1
+namespace SimpleCalc
 {
     class Program
     {
