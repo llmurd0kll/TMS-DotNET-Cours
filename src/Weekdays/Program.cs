@@ -15,41 +15,50 @@ namespace Weekdays
 
         }
         static Weekdays[] weekdays = new Weekdays[7] { Weekdays.Monday, Weekdays.Tuesday, Weekdays.Wednesday, Weekdays.Thursday, Weekdays.Friday, Weekdays.Saturday, Weekdays.Sunday };
-        static Dictionary<int, string> messegeKep = new Dictionary<int, string>();
+        static Dictionary <int, string> messegeKep = new Dictionary <int, string>();
         static int num;
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, dear friend!\n");
+            Console.WriteLine("Hello, dear friend!\nFor correct answers use Yes or No");
+            Console.WriteLine("Please select between those days:");
             for (int i = 0; i < weekdays.Length; i++)
             {
                 Console.WriteLine("{0}. {1}", i + 1, weekdays[i]);
             }
-            MainMenu1();
-
-            
+            mainMeth();  
         }
-
         static int dayEnter()
         {
 
-            Console.WriteLine("Please, enter the day:");
+            Console.WriteLine("Please, enter the day (use numbers 1-8):");
             num = int.Parse(Console.ReadLine());
             if (num > 0 && num < 8)
             {
-                Console.WriteLine("Your day: {0}", weekdays[num - 1]);
+                Console.WriteLine("Your day is: {0}", weekdays[num - 1]);
                 foreach (KeyValuePair<int, string> key in messegeKep)
                 {
                     int a = key.Key;
                     if (a == num)
                     {
                         Console.WriteLine("This date is full, you can't leave messege here");
-                        MainMenu1();
+                        string t;
+                        foreach (KeyValuePair<int, string> val in messegeKep)
+                        {
+                            int b = val.Key;
+                            if (b == num)
+                            {
+                                t = val.Value;
+                                Console.WriteLine("Your messege is: {0}", t);
+                            }
+                        }
+                      
+                        mainMeth();
                     }
 
 
                 }
             }
-            else MainMenu1();
+            else mainMeth();
 
 
 
@@ -58,7 +67,7 @@ namespace Weekdays
         static void messegeLeft(int i)
         {
             string mes, ansv;
-            Console.WriteLine($"Would you like write something for this day?");
+            Console.WriteLine($"Would you like to write something for this day?");
             ansv = Console.ReadLine();
             if (ansv == "Yes")
             {
@@ -89,17 +98,11 @@ namespace Weekdays
             if (ansv2 == "Yes")
             {
                 Console.WriteLine("Ok");
-                MainMenu1();
-
+                mainMeth();
             }
             else Console.WriteLine("By");
-
-
-
-            //////////Вот здесь надо условие мол если метод выше успешно, то дальше след метод, если не успешно, то должно прекращаться
-
         }
-        static void MainMenu1()
+        static void mainMeth()
         {
             dayEnter();
             messegeLeft(num);
