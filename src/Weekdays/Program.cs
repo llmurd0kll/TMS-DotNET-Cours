@@ -12,7 +12,6 @@ namespace Weekdays
             Friday,
             Saturday,
             Sunday
-
         }
         static Weekdays[] weekdays = new Weekdays[7] { Weekdays.Monday, Weekdays.Tuesday, Weekdays.Wednesday, Weekdays.Thursday, Weekdays.Friday, Weekdays.Saturday, Weekdays.Sunday };
         static Dictionary <int, string> messegeKep = new Dictionary <int, string>();
@@ -29,7 +28,6 @@ namespace Weekdays
         }
         static int dayEnter()
         {
-
             Console.WriteLine("Please, enter the day (use numbers 1-8):");
             num = int.Parse(Console.ReadLine());
             if (num > 0 && num < 8)
@@ -51,17 +49,11 @@ namespace Weekdays
                                 Console.WriteLine("Your messege is: {0}", t);
                             }
                         }
-                      
                         mainMeth();
                     }
-
-
                 }
             }
             else mainMeth();
-
-
-
             return num;
         }
         static void messegeLeft(int i)
@@ -71,13 +63,11 @@ namespace Weekdays
             ansv = Console.ReadLine();
             if (ansv == "Yes")
             {
-
                 Console.WriteLine("Plese, leave your messege here: ");
                 mes = Console.ReadLine();
                 messegeKep.Add(num, mes);
                 Console.WriteLine("So now you've got this messege: {0}", mes);
                 MainMenu();
-
             }
             else if (ansv == "No")
             {
@@ -87,12 +77,10 @@ namespace Weekdays
             else
             {
                 Console.WriteLine("Oh NO!\n Plese write your answer correctly next time!");
-
             }
         }
         static void MainMenu()
         {
-
             Console.WriteLine("Would you like to select another day?");
             string ansv2 = Console.ReadLine();
             if (ansv2 == "Yes")
@@ -107,7 +95,5 @@ namespace Weekdays
             dayEnter();
             messegeLeft(num);
         }
-
-
     }
 }
