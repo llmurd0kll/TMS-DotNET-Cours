@@ -13,8 +13,7 @@ namespace WeekDays_V2
             {
                 Console.WriteLine("So select a day in which you would like to leave a messege\nAttention! Use the next format: dd.mm.yyyy ");
                 day = DateTime.Parse(Console.ReadLine());
-                Console.WriteLine($"You selected {day}");
-                //Selection();
+                Console.WriteLine($"You selected {day}");               
                 if (day != null)
                 {
                     if (messegeKep.Count > 0)
@@ -38,7 +37,6 @@ namespace WeekDays_V2
                                 Selection();
                             }
                             else Selection();
-
                         }
                     }
                     else
@@ -50,22 +48,17 @@ namespace WeekDays_V2
                 else
                 {
                     Console.WriteLine("You have not entered day");
-                }
-               
-            }
-
-            catch (ArgumentException)
-            {
-                Console.WriteLine("This is arg ex");
-
+                }             
             }
             catch (FormatException)
             {
                 Console.WriteLine("Error! Please write your date in a correct format");
+                Selection();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("This is simple ex");
+                Console.WriteLine("Ops, something went wrong, please try again");
+                Selection();
             }
             return Convert.ToString(day);
         }
@@ -80,39 +73,21 @@ namespace WeekDays_V2
                 Console.WriteLine($"So your messege is: {mes}");
                 messegeKep.Add(day, mes);
                 Selection();
-
             }
             else
             {
                 Console.Clear();
+                Console.WriteLine("That's why your answer was't: Yes");
                 Selection();
             }
         }
-        
-
         static void Main(string[] args)
-        {
-            
-           /* DateTime startDate = DateTime.Now;
-            DateTime date = startDate.Date;
-            DateTime[] week = new DateTime[7];
-            week[0] = date;
-            for (int i = 0; i < 7; i++)
-            {
-                week[i] = date.AddDays(i);
-            }*/
+        {        
             Console.WriteLine("Hello and welcome to the WeekDays v2.0, let's start\n");
-
-
             Selection();
-            
-            
-            
-
         }
         static void Selection()
-        {
-            
+        {            
             Console.WriteLine("Select your next action:\n1)Day selection\n2)Leave messege\n3)Leave app");
             try
             {
@@ -131,8 +106,6 @@ namespace WeekDays_V2
                         Console.WriteLine("You selected wrong action, plese try again");
                         Selection();
                         break;
-
-
                 }
             }
             catch (FormatException)
