@@ -3,13 +3,13 @@
 namespace BaseOfGoods
 {
     /// <summary>
-    /// Яблоки
+    /// Бананы
     /// </summary>
-    public class Apple : Fruits
+    public class Banana : Fruits
     {
         public bool IsFresh;
 
-        public Apple(string name, double price, bool isInStock, bool IsFresh, byte ID) : base(name, price, isInStock, ID)
+        public Banana(string name, double price, bool isInStock, bool IsFresh, byte ID) : base(name, price, isInStock, ID)
         {
             this.name = name;
             this.price = price;
@@ -17,7 +17,7 @@ namespace BaseOfGoods
             this.ID = ID;
             this.IsFresh = IsFresh;
         }
-       
+
         public override string ToString()
         {
             string a;
