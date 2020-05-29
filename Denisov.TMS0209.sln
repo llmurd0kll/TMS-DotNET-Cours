@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "src\HelloWorld\HelloWorld.csproj", "{35BD03E9-B864-43D7-AA7D-AC7233B31FAE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalc", "src\HomeWork1\SimpleCalc.csproj", "{6E527629-11B7-4152-B63F-D9B978A6F0C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCalc", "src\SimpleCalc\SimpleCalc.csproj", "{6E527629-11B7-4152-B63F-D9B978A6F0C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weekdays", "src\Weekdays\Weekdays.csproj", "{410E7967-449C-47AB-8D9E-02ADE2791CF4}"
 EndProject
