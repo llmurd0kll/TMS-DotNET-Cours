@@ -1,26 +1,19 @@
-﻿/*Что нужно для реализации:
- * Добавление нового товара в базу
- * Удаление товара из базы
- * Поиск товара 
- * 
- * 
- * 
- */
-
-namespace BaseOfGoods
+﻿namespace BaseOfGoods
 {
     /// <summary>
-    /// Фрукты
+    /// Fruits class.
     /// </summary>
     public class Fruits : Goods
     {
-        //public string Name { get; set; }
-        //public double Price { get; set; }
-        //public bool IsinStock { get; set; }
-
         public byte ID;
 
-
+        /// <summary>
+        /// Fruits constructor.
+        /// </summary>
+        /// <param name="name">Name</param>
+        /// <param name="price">Price</param>
+        /// <param name="isInStock">Available in stock</param>
+        /// <param name="ID">Id of item</param>
         public Fruits(string name, double price, bool isInStock, byte ID) : base(name, price, isInStock)
         {
             this.name = name;
@@ -32,5 +25,5 @@ namespace BaseOfGoods
 
 
 
-   
+
 }

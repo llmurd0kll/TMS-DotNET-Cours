@@ -1,25 +1,19 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
-/*Что нужно для реализации:
- * Добавление нового товара в базу
- * Удаление товара из базы
- * Поиск товара 
- * 
- * 
- * 
- */
-
 
 namespace BaseOfGoods
 {
-   
-
+    /// <summary>
+    /// Programm class.
+    /// </summary>
     partial class Program
     {
-       public static List<string> goods = new List<string>();
         /// <summary>
-        /// Добавление товаров
+        /// List of goods.
+        /// </summary>
+        public static List<string> goods = new List<string>();
+        /// <summary>
+        /// Goods adding.
         /// </summary>
         public static void GoodAdd()
         {
@@ -32,7 +26,7 @@ namespace BaseOfGoods
                     Console.WriteLine($"You selected apple: {apple1}");
                     goods.Add(apple1.ToString());
                     StartMenu();
-                       break;
+                    break;
                 case 2:
                     Banana banana1 = new Banana("Asia", 55.2, true, false, 2);
                     Console.WriteLine($"You selected banana: {banana1}");
@@ -52,23 +46,19 @@ namespace BaseOfGoods
 
         }
         /// <summary>
-        /// Просмотр всех товаров в базе
+        /// Items in base
         /// </summary>
         public static void ShowGoods()
         {
             Console.WriteLine("Now you'v got:");
             for (int i = 0; i < goods.Count; i++)
             {
-
-            
-            
-                //string name = Convert.ToString(i);///вывод в цифрах, надо стринговый
                 Console.WriteLine(goods[i]);
             }
             StartMenu();
         }
         /// <summary>
-        /// Удаление товаров
+        /// Goods deleting.
         /// </summary>
         public static void DeleteGoods()
         {
@@ -104,17 +94,17 @@ namespace BaseOfGoods
             StartMenu();
         }
 
-
         static void Main(string[] args)
         {
             Console.WriteLine("Hello and welcome to the Base of Goods, let's start\n");
             StartMenu();
         }
-
-
-        static void StartMenu() 
+        /// <summary>
+        /// Start menu.
+        /// </summary>
+        static void StartMenu()
         {
-            Console.WriteLine("Please select your next action:\n1)Add new good in base\n2)Delete good from base\n3)Show full base of products\n4)Select to exit");           
+            Console.WriteLine("Please select your next action:\n1)Add new good in base\n2)Delete good from base\n3)Show full base of products\n4)Select to exit");
             try
             {
                 int answ = Convert.ToInt32(Console.ReadLine());
@@ -143,10 +133,6 @@ namespace BaseOfGoods
                 StartMenu();
             }
 
-
         }
-
-
-
     }
 }

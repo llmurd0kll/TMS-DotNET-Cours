@@ -1,14 +1,19 @@
-﻿using System;
-
-namespace BaseOfGoods
+﻿namespace BaseOfGoods
 {
     /// <summary>
-    /// Яблоки
+    /// Watermelon class.
     /// </summary>
     public class Watermelon : Fruits
     {
         public bool IsFresh;
-
+        /// <summary>
+        /// Watermelon contructor.
+        /// </summary>
+        /// <param name="name">Name</param>
+        /// <param name="price">Price</param>
+        /// <param name="isInStock">Available in stock</param>
+        /// <param name="IsFresh">Frash param</param>
+        /// <param name="ID">Id of item</param>
         public Watermelon(string name, double price, bool isInStock, bool IsFresh, byte ID) : base(name, price, isInStock, ID)
         {
             this.name = name;
@@ -17,7 +22,10 @@ namespace BaseOfGoods
             this.ID = ID;
             this.IsFresh = IsFresh;
         }
-
+        /// <summary>
+        /// Print to console
+        /// </summary>
+        /// <returns>Watermelon characteristic</returns>
         public override string ToString()
         {
             string a;
