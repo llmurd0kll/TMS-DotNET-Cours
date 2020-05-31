@@ -1,6 +1,6 @@
 # TeachMeSkills school ASP.Net Corse
 This is my repository where I store all my test projects which I developed during my education in TeachMeSkills school.
-## Solution contains
+## Solution contains following projects:
 ### HelloWorld
 Just a simple console app where you can print Hello World!
 ### SimpleCalc
